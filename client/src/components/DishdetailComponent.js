@@ -58,7 +58,7 @@ const ColoredLine = ({ color }) => (
             return(
                 <div className="col-12 col-md-5 m-1">
                     <h4>Comments</h4>
-                    <ul className="list-unstyled text-white">
+                    <ul className="text-dark">
                         <Stagger in>
                             {comments.map((comment) => {
                                 return (
@@ -110,7 +110,7 @@ const ColoredLine = ({ color }) => (
         render() {
             return(
             <div>
-                <Button outline onClick={this.toggleModal}><span className="fa fa-pencil fa-lg"></span> Submit Comment</Button>
+                <Button color="warning" onClick={this.toggleModal}><span className="fa fa-pencil fa-lg"></span> Submit Comment</Button>
                 <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
                 <ModalHeader toggle={this.toggleModal}>Submit Comment</ModalHeader>
                 <ModalBody>
@@ -168,7 +168,7 @@ const ColoredLine = ({ color }) => (
         else if (props.dish != null)        
             return (
                 <div className="container">
-                    <div className="row text-black">
+                    <div className="row text-dark">
                         <Breadcrumb>
                             <BreadcrumbItem><Link to='/Courses'>All Courses</Link></BreadcrumbItem>
                             <BreadcrumbItem active>{props.dish.name}</BreadcrumbItem>

@@ -20,24 +20,24 @@ function About(props) {
             <div className="row row-content">
                 <div className="col-12 col-md-6 text-black">
                     <h2>Our History</h2>
-                    <p>Courser-S is a world-wide online learning platform founded in 2012 by Stanford computer science professors Andrew Ng and Daphne Koller that offers massive open online courses (MOOC), specializations, and degrees.
-                        Courser-S works with universities and other organizations to offer online courses, specializations, and degrees in a variety of subjects, such as engineering, data science, machine learning, mathematics, business, computer science, digital marketing, humanities, medicine, biology, social sciences, and others.
-                    </p>
-                    <p>As of December 2019, the total number of partners is more than 200 across 29 countries. Course-S mainly works with universities and colleges, but also with corporates and governments. University partners include University of São Paulo in Brazil,[9] University of London[10] in the UK, Indian School of Business of India,[11] Yonsei University in Korea,[12] and institutions like Yale[13], University of Illinois and University of Pennsylvania.[14]</p>
+                    <p>Muffakham Jah College of Engineering and Technology (MJCET) is an engineering college located at Mount Pleasant, Road number 3, Banjara Hills, in the heart of the city of Hyderabad in India. The college is named after Prince Muffakham Jah - grandson of the 7th Nizam - Mir Osman Ali Khan, who had donated part of his personal land for this educational institution.</p>
+                    <p>MJCET is affiliated to <em>Osmania University</em> and is approved by the AICTE (All India Council for Technical Education). The college is run and maintained by the Sultan-ul-Uloom Educational Society. The college offers Bachelor of engineering (B.E) courses in eight disciplines out of which seven courses, namely, Civil Engineering, Computer Science and Engineering, Electronics and Communication Engineering, Electrical and Electronics Engineering, Mechanical Engineering and Production Engineering - have been accredited by the National Board of Accreditation (NBA, AICTE) and the Institution of Engineers (India).</p>
                 </div>
                 <div className="col-12 col-md-5">
                     <Card>
-                        <CardHeader className="bg-primary text-white">Facts At a Glance</CardHeader>
+                        <CardHeader className="bg-primary text-white">Muffakham Jah College Of Engineering and Technology</CardHeader>
                         <CardBody>
                             <dl className="row p-1">
-                                <dt className="col-6">Started</dt>
-                                <dd className="col-6">3 Feb. 2013</dd>
-                                <dt className="col-6">Major Stake Holder</dt>
-                                <dd className="col-6">HK Fine Foods Inc.</dd>
-                                <dt className="col-6">Last Year's Turnover</dt>
-                                <dd className="col-6">$1,250,375</dd>
-                                <dt className="col-6">Employees</dt>
-                                <dd className="col-6">40</dd>
+                                <dt class="col-6">Motto</dt>
+                                <dd class="col-6">Lighted to Enlighten. </dd>
+                                <dt class="col-6">Type</dt>
+                                <dd class="col-6">Private Institution</dd>
+                                <dt class="col-6">Established</dt>
+                                <dd class="col-6">1980</dd>
+                                <dt class="col-6">Affiliation</dt>
+                                <dd class="col-6">Osmania University</dd>
+                                <dt class="col-6">Website</dt>
+                                <dd class="col-6"><a href="http://mjcollege.ac.in/">Visit College Website</a></dd>
                             </dl>
                         </CardBody>
                     </Card>
@@ -46,10 +46,9 @@ function About(props) {
                     <Card>
                         <CardBody className="bg-faded">
                             <blockquote className="blockquote">
-                                <p className="mb-0">Don’t worry about doing things perfectly. If you do, you’ll never get things done.</p>
-                                <footer className="blockquote-footer">Yogi Berra,
-                                <cite title="Source Title">The Wit and Wisdom of Yogi Berra,
-                                    P. Pepe, Diversion Books, 2014</cite>
+                                <p className="mb-0">Leadership and learning are indispensable to each other</p>
+                                <footer className="blockquote-footer">John F. Kennedy
+                                <cite title="Source Title"></cite>
                                 </footer>
                             </blockquote>
                         </CardBody>

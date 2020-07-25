@@ -25,7 +25,7 @@ class Contact extends Component {
 
     render() {
         return(
-            <div className="container text-black">
+            <div className="container text-dark">
                 <div className="row">
                     <Breadcrumb>
                         <BreadcrumbItem><Link to='/home'>Home</Link></BreadcrumbItem>
@@ -60,10 +60,10 @@ class Contact extends Component {
                     </div>
                 </div>
                 <div className="row row-content">
-                    <div className="col-12 text-black">
+                    <div className="col-12 text-dark">
                         <h3>Send us Your Feedback</h3>
                     </div>
-                    <div className="col-12 col-md-9 text-black">
+                    <div className="col-12 col-md-9 text-dark">
                         <Form model="feedback" onSubmit={(values) => this.handleSubmit(values)}>
                             <Row className="form-group">
                                 <Label htmlFor="firstname" md={2}>First Name</Label>

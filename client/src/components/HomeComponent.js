@@ -248,38 +248,38 @@ function Home(props) {
     return(
         <div className="container">
             <div className="row">
-                <div className="col-12 text-black">
+                <div className="col-12 text-dark">
                     <h3>Featured Courses</h3>
                     <hr />
                 </div>                
             </div>
             <div className="row align-items-start ">
-                <div className="col-12 col-sm-3 m-1 ">
+                <div className="col-12 col-sm-4 m-0 ">
                     <RenderCard item={props.dish} 
                         isLoading={props.dishesLoading}
                         errMess={props.dishesErrMess} />
                 </div>
-                <div className="col-12 col-sm-3 m-1">
+                <div className="col-12 col-sm-4 m-0">
                     <RenderCard1 item={props.promotion} 
                         isLoading={props.promosLoading}
                         errMess={props.promosErrMess} />
                 </div>
-                <div className="col-12 col-sm-3 m-1">
+                <div className="col-12 col-sm-4 m-0">
                     <RenderCard2 item={props.leader} 
                         isLoading={props.leaderLoading} 
                         errMess={props.leaderErrMess} />
                 </div>
-                <div className="col-12 col-sm-3 m-1">
+                <div className="col-12 col-sm-4 m-0">
                     <RenderCard3 item={props.leader2} 
                         isLoading={props.leaderLoading2} 
                         errMess={props.leaderErrMess2} />
                 </div>
-                <div className="col-12 col-sm-3 m-1">
+                <div className="col-12 col-sm-4 m-0">
                     <RenderCard4 item={props.leader3} 
                         isLoading={props.leaderLoading3} 
                         errMess={props.leaderErrMess3} />
                 </div>
-                <div className="col-12 col-sm-3 m-1">
+                <div className="col-12 col-sm-4 m-0">
                     <RenderCard5 item={props.leader1} 
                         isLoading={props.leaderLoading1} 
                         errMess={props.leaderErrMess1} />

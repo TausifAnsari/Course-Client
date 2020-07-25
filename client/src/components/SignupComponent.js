@@ -30,7 +30,7 @@ class Contact extends Component {
                         <BreadcrumbItem><Link to='/home'>Home</Link></BreadcrumbItem>
                         <BreadcrumbItem active>Sign Up</BreadcrumbItem>
                     </Breadcrumb>
-                    <div className="col-12 text-white">
+                    <div className="col-12 text-dark">
                         <h3>Sign Up</h3>
                         <hr />
                     </div>
@@ -38,7 +38,7 @@ class Contact extends Component {
                 <div className="row row-content">
                     <div className="col-12">
                     </div>
-                    <div className="col-12 col-md-9 text-white">
+                    <div className="col-12 col-md-9 text-dark">
                         <Form model="feedback" onSubmit={(values) => this.handleSubmit(values)}>
                             <Row className="form-group">
                                 <Label htmlFor="firstname" md={2}>First Name</Label>

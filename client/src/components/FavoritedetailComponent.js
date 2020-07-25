@@ -20,7 +20,7 @@ import { FadeTransform} from 'react-animation-components';
                                         <Nav variant="pills" className="flex-column">
                                             {dish.links.map((link, index) => (
                                                 <Nav.Item>
-                                                    <Nav.Link eventKey={index+1}> Introduction to AI AND ML{index +1}</Nav.Link>
+                                                    <Nav.Link eventKey={index+1}> Lecture {index + 1}</Nav.Link>
                                                 </Nav.Item>
                                                 ))}
                                         </Nav>
@@ -66,7 +66,7 @@ import { FadeTransform} from 'react-animation-components';
         else if (props.dish != null)        
             return (
                 <div className="container m-0 ml-5 mb-3">
-                    <div className="row text-white">
+                    <div className="row text-dark">
                         <Breadcrumb>
                             <BreadcrumbItem><Link to='/mycourses'>My Courses</Link></BreadcrumbItem>
                             <BreadcrumbItem active>{props.dish.name}</BreadcrumbItem>

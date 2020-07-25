@@ -44,7 +44,7 @@ function LeaderList(props) {
                             <BreadcrumbItem><Link to='/home'>Home</Link></BreadcrumbItem>
                             <BreadcrumbItem active>All Instructors</BreadcrumbItem>
                         </Breadcrumb>
-                        <div className="col-12 text-black">
+                        <div className="col-12 text-dark">
                             <h3>All Instructors</h3>
                             <hr />
                         </div>

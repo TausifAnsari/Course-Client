@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardImg, CardImgOverlay, CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
+import { Card, CardImg, CardBody, Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import { Media,  Button } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { baseUrl } from '../shared/baseUrl';
@@ -12,9 +12,9 @@ function RenderMenuItem({ dish, deleteFavorite , onClick}) {
             <Card className="col-sm-6">
                 <Link to={`/mycourses/${dish._id}`} >
                     <CardImg src={baseUrl + dish.image} alt={dish.name} />
-                    <CardImgOverlay>
-                        <CardTitle>{dish.name}</CardTitle>
-                    </CardImgOverlay>
+                    <CardBody>
+                        <h3>{dish.name}</h3>
+                    </CardBody>
                 </Link>
             </Card>
 
@@ -26,7 +26,7 @@ function RenderMenuItem({ dish, deleteFavorite , onClick}) {
                 <Media heading>{dish.name}</Media>
                 <p>{dish.description}</p>
                 <Button outline color="danger" onClick={() => deleteFavorite(dish._id)}>
-                    <span className="fa fa-times"></span>DELETE
+                    <span className="fa fa-times"></span>Unenroll
                 </Button>
             </Media>
         </Media>
@@ -72,12 +72,12 @@ const Favorites = (props) => {
                         <BreadcrumbItem><Link to='/home'>Home</Link></BreadcrumbItem>
                         <BreadcrumbItem active>My Courses</BreadcrumbItem>
                     </Breadcrumb>
-                    <div className="col-12 text-white">
+                    <div className="col-12 text-dark">
                         <h3>My Courses</h3>
                         <hr />
                     </div>
                 </div>
-                <div className="row text-white">
+                <div className="row text-dark">
                     <Media list>
                         {favorites}
                     </Media>

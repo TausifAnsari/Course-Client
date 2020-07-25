@@ -119,7 +119,7 @@ class Header extends Component {
                             <Nav className="ml-auto" navbar>
                                 <NavItem>
                                     { !this.props.auth.isAuthenticated ?
-                                        <Button color="secondary" onClick={this.toggleModal}>
+                                        <Button outline onClick={this.toggleModal}>
                                             Login
                                             {this.props.auth.isFetching ?
                                                 <span className="fa fa-spinner fa-pulse fa-fw"></span>
@@ -162,7 +162,7 @@ class Header extends Component {
                             <Nav  navbar>
                                 <NavItem>
                                     { !this.props.auth.isAuthenticated ?
-                                        <Button color="secondary" onClick={this.toggleModal1}>
+                                        <Button outline onClick={this.toggleModal1}>
                                            Faculty Login
                                             {this.props.auth.isFetching ?
                                                 <span className="fa fa-spinner fa-pulse fa-fw"></span>
@@ -182,7 +182,9 @@ class Header extends Component {
                     <section class="container">
                         <div class="row text-center">
                             <h2>MJCET Course Portal System</h2>
-                            <h3>Happy Learning</h3>
+                        </div>
+                        <div class="row text-center">
+                            <h2>A high achieving multicultural community for learning.</h2>
                         </div>
                     </section>
                 </Jumbotron>

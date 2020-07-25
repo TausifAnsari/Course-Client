@@ -2,26 +2,26 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 function Footer(props) {
     return(
-        <div className="footer text-white">
+        <div className="footer text-dark">
             <div className="container">
                 <div className="row justify-content-center">             
                     <div className="col-4 offset-1 col-sm-2">
                         <h5>Links</h5>
                         <ul className="list-unstyled">
-                            <li><Link to="/home" className="text-white" >Home</Link></li>
-                            <li><Link to="/aboutus" className="text-white">About Us</Link></li>
-                            <li><Link to="/Courses" className="text-white">All Courses</Link></li>
-                            <li><Link to="/Instructor" className="text-white">Faculty</Link></li>
-                            <li><Link to="/contactus" className="text-white">Contact Us</Link></li>
+                            <li><Link to="/home" className="text-dark" >Home</Link></li>
+                            <li><Link to="/aboutus" className="text-dark">About Us</Link></li>
+                            <li><Link to="/Courses" className="text-dark">All Courses</Link></li>
+                            <li><Link to="/Instructor" className="text-dark">Faculty</Link></li>
+                            <li><Link to="/contactus" className="text-dark">Contact Us</Link></li>
                         </ul>
                     </div>
                     <div className="col-7 col-sm-5">
                         <h5>Our Address</h5>
-                        <address className="text-white">
+                        <address className="text-dark">
                         Hyderabad, Telangana<br />
                         INDIA<br />
-                        <i className="fa fa-phone fa-lg"></i>: <a className="text-white" href="tel:+91 8978661535">8978661535</a><br />
-                        <i className="fa fa-envelope fa-lg"></i>: <a className="text-white" href="mailto:mohammed.tausifansari@gmail.com">
+                        <i className="fa fa-phone fa-lg"></i>: <a className="text-dark" href="tel:+91 8978661535">8978661535</a><br />
+                        <i className="fa fa-envelope fa-lg"></i>: <a className="text-dark" href="mailto:mohammed.tausifansari@gmail.com">
                             mohammed.tausifansari@gmail.com</a>
                         </address>
                     </div>

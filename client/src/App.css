@@ -6,7 +6,7 @@
 .bo{
  
   
-  background-color: #e1e6e2;
+  background-color: #3282b8;
 
 }
 
@@ -21,7 +21,8 @@ background-image: linear-gradient(to right,rgb(238, 197, 197),rgba(106, 181, 185
 }
 
 .footer{
-  background-image:linear-gradient(to right,#3912b0,#d528de) ;
+  
+  background-color: #bbe1fa;
 
 }
 .jumbotron {
@@ -39,7 +40,6 @@ background-image: linear-gradient(to right,rgb(238, 197, 197),rgba(106, 181, 185
   color: #F06529;
   font-weight: 700;
   padding: 10px 35px;
-  border-radius: 5px;
 }
 
 .jumbotron h3 {
@@ -60,7 +60,8 @@ address{
 }
 
 .navbar-dark {
-  background-image:linear-gradient(to right,#3912b0,#d528de) ;
+  
+  background-color: #1b262c;
 }
 
 .page-enter {

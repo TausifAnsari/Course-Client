@@ -17,6 +17,7 @@ import { actions } from 'react-redux-form';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import Four from './404/404';
 import admin from './adminComponent';
+import faculty from './facultyComponent';
 
 const mapStateToProps = state => {
     return {
@@ -192,6 +193,7 @@ class Main extends Component {
               <SecureRoute exact path="/signup" component={()=> <Signup resetFeedbackForm={this.props.resetFeedbackForm} SignupUser={this.props.SignupUser} />}/>
               <Route exact path="/contactus" component={() => <Contact resetFeedbackForm={this.props.resetFeedbackForm} postFeedback={this.props.postFeedback} />} />
               <AdminRoute path="/admin" component={admin} />
+              <AdminRoute path="/faculty" component={faculty} />
               <Route component={Four} />
             </Switch>
           </CSSTransition>
