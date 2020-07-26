@@ -20,7 +20,7 @@ import { FadeTransform} from 'react-animation-components';
                                         <Nav variant="pills" className="flex-column">
                                             {dish.links.map((link, index) => (
                                                 <Nav.Item>
-                                                    <Nav.Link eventKey={index+1}> Lecture {index + 1}</Nav.Link>
+                                                    <Nav.Link eventKey={index+1}> {link.title} </Nav.Link>
                                                 </Nav.Item>
                                                 ))}
                                         </Nav>

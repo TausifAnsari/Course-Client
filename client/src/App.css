@@ -5,8 +5,18 @@
 }
 .bo{
  
+  background-color: #ffffdd;
+
+}
+
+.navbar-dark {
   
-  background-color: #3282b8;
+  background-color: #006a71;
+}
+
+.footer{
+  
+  background-color: #d3dbff;
 
 }
 
@@ -20,11 +30,7 @@ background-image: linear-gradient(to right,rgb(238, 197, 197),rgba(106, 181, 185
   min-height:400px;
 }
 
-.footer{
-  
-  background-color: #bbe1fa;
 
-}
 .jumbotron {
   display: flex;
   align-items: center;
@@ -59,10 +65,7 @@ address{
   color:#0f0f0f;
 }
 
-.navbar-dark {
-  
-  background-color: #1b262c;
-}
+
 
 .page-enter {
   opacity: 0.01;
