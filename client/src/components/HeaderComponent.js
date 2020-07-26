@@ -83,7 +83,7 @@ class Header extends Component {
        
         return(
             <React.Fragment>
-                <Navbar dark expand="md" >
+                <Navbar dark expand="md" fixed="top">
                         <NavbarToggler onClick={this.toggleNav} />
                         <NavbarBrand className="mr-auto" href="/home">
                         <span className="fa fa-book fa-lg"></span>Course-S

@@ -4,7 +4,7 @@
   padding:0px auto;
 }
 .bo{
- 
+  padding-top:45px;
   background-color: #ffffdd;
 
 }
@@ -34,10 +34,11 @@ background-image: linear-gradient(to right,rgb(238, 197, 197),rgba(106, 181, 185
 .jumbotron {
   display: flex;
   align-items: center;
-  height: 450px;
+  height: 100vh;
   background-image: url("https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/buildawebsite.jpg");
   background-size: cover;
-  background-position: center;
+  
+  background-attachment: fixed; 
 }
 
 .jumbotron h2 {
