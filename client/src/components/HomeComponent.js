@@ -4,7 +4,7 @@ import UncontrolledCollapse from 'reactstrap/lib/UncontrolledCollapse.js';
 import { Loading } from './LoadingComponent';
 import { baseUrl } from '../shared/baseUrl';
 import { Link } from 'react-router-dom';
-import { FadeTransform } from 'react-animation-components';
+import { FadeTransform,Fade } from 'react-animation-components';
 
 const ColoredLine = ({ color }) => (
     <hr
@@ -52,6 +52,31 @@ function RenderCard({item, isLoading, errMess}) {
                 </Card>
             </FadeTransform>
         );
+}
+
+function RenderHomeItem({ dish}) {
+       
+    return(
+        <FadeTransform 
+        in
+        transformProps={{
+            exitTransform: 'translateX(-200px)'
+        }}
+        fadeProps={{
+            enterOpacity: 100,
+        }}><Fade in={false} exitOpacity={100}>
+       
+            <Card className="shadow-lg p-3 mb-5 bg-white rounded">
+                <CardImg height="200px" src={baseUrl + dish.image} alt={dish.name} />
+                    <h4><CardTitle>{dish.name}</CardTitle></h4>
+            <ColoredLine color="black" />
+            <Link to={`/Courses/${dish._id}`} >
+            <Button outline color="primary">Go To Course</Button>
+            </Link>
+            </Card>
+            </Fade>
+        </FadeTransform>
+    );
 }
 
 function RenderCard1({item, isLoading, errMess}) {
@@ -245,6 +270,13 @@ function RenderCard5({item, isLoading, errMess}) {
 }
 
 function Home(props) {
+    const home = props.dishes.dishes.filter(dish => dish.featured).map((dish) => {
+        return (
+            <div key={dish._id} className="col-12 col-md-4  sks">
+                <RenderHomeItem dish={dish} />
+            </div>
+        );
+    });
     return(
         <div className="container">
             <div className="row">
@@ -253,37 +285,8 @@ function Home(props) {
                     <hr />
                 </div>                
             </div>
-            <div className="row align-items-start ">
-                <div className="col-12 col-sm-4 m-0 ">
-                    <RenderCard item={props.dish} 
-                        isLoading={props.dishesLoading}
-                        errMess={props.dishesErrMess} />
-                </div>
-                <div className="col-12 col-sm-4 m-0">
-                    <RenderCard1 item={props.promotion} 
-                        isLoading={props.promosLoading}
-                        errMess={props.promosErrMess} />
-                </div>
-                <div className="col-12 col-sm-4 m-0">
-                    <RenderCard2 item={props.leader} 
-                        isLoading={props.leaderLoading} 
-                        errMess={props.leaderErrMess} />
-                </div>
-                <div className="col-12 col-sm-4 m-0">
-                    <RenderCard3 item={props.leader2} 
-                        isLoading={props.leaderLoading2} 
-                        errMess={props.leaderErrMess2} />
-                </div>
-                <div className="col-12 col-sm-4 m-0">
-                    <RenderCard4 item={props.leader3} 
-                        isLoading={props.leaderLoading3} 
-                        errMess={props.leaderErrMess3} />
-                </div>
-                <div className="col-12 col-sm-4 m-0">
-                    <RenderCard5 item={props.leader1} 
-                        isLoading={props.leaderLoading1} 
-                        errMess={props.leaderErrMess1} />
-                </div>
+            <div className="row">
+                {home}
             </div>
         </div>
         

@@ -215,7 +215,7 @@ class Header extends Component {
                     </ModalBody>
                 </Modal>
                 <Modal isOpen={this.state.isModalOpen1} toggle={this.toggleModal1}>
-                    <ModalHeader toggle={this.toggleModal1}>Login</ModalHeader>
+                    <ModalHeader toggle={this.toggleModal1}>Faculty Login</ModalHeader>
                     <ModalBody>
                         <Form onSubmit={this.handleLogin1}>
                             <FormGroup>

@@ -13,7 +13,7 @@ import { FadeTransform} from 'react-animation-components';
                         transformProps={{
                             exitTransform: 'scale(0.5) translateY(-50%)'
                         }}>
-                            {/*itrating through array to render all the vedios associated to dish */}
+                            {/*itrating through array to render all the videos associated to dish */}
                             <Tab.Container id="left-tabs-example" defaultActiveKey="1">
                                 <Row>
                                     <Col sm={4}>
